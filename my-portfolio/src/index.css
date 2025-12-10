@@ -1,0 +1,56 @@
+/* src/index.css */
+
+/* Tailwind base + components + utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------- Base overrides ------------- */
+
+/* Use Inter from Google — loaded in index.html */
+:root {
+  --bg: #ffffff;
+  --muted: #6b7280; /* gray-500-ish */
+}
+
+/* Smooth color transitions for theme switch */
+html, body, #root {
+  transition: background-color 200ms ease, color 200ms ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Bold headings style */
+h1, h2, h3, h4 {
+  scroll-margin-top: 4rem;
+}
+
+/* Card image object fit fallback */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.leetcode {
+  max-width: 3%;
+}
+
+/* Small utility for subtle focus outlines (accessible) */
+:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(99,102,241,0.12); /* indigo-500 @ 12% */
+}
+
+/* Dark-mode specific customizations (optional) */
+.dark body {
+  --bg: #0b1220;
+}
+
+/* Optional scrollbar styling for modern browsers */
+*::-webkit-scrollbar { height: 10px; width: 10px; }
+*::-webkit-scrollbar-thumb {
+  background: rgba(99,102,241,0.25);
+  border-radius: 999px;
+}

@@ -1,0 +1,15 @@
+export const skills = [
+  "React",
+  "JavaScript",
+  "TypeScript",
+  "HTML",
+  "CSS",
+  "Tailwind",
+  "Testing",
+  "Git",
+  "Webpack",
+  "CI/CD",
+  "C/C++",
+  "OOPS",
+  "Data Structures and Algorithms",
+];
