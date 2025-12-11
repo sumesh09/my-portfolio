@@ -15,7 +15,7 @@ export default function Home() {
       }}
     >
          <div className="absolute inset-0 bg-black/40"></div>
-      <div className="flex">
+      <div className="md:flex">
         <img
           src={helloWave}
           alt="Hello waving"
